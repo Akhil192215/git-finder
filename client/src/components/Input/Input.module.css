@@ -1,0 +1,15 @@
+.input {
+    background: #323232;
+    border: none;
+   margin-top: 3px;
+    padding: 10px;
+    border-top-left-radius:20px;
+    border-bottom-left-radius:10px;
+    width: 350px;
+    height: 44px;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+   
+  }
+  
