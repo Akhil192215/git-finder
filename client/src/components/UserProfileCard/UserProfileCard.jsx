@@ -1,10 +1,10 @@
 import React from "react";
 import SubmitButton from "../SubmitButton/SubmitButton";
 import styles from "./UserProfileCard.module.css";
-const UserProfileCard = ({ user,close }) => {
-  const back = ()=>{
-    close(false)
-  }
+const UserProfileCard = ({ user, close }) => {
+  const back = () => {
+    close(false);
+  };
   console.log(user);
   return (
     <div className={styles.mask}>
@@ -19,11 +19,11 @@ const UserProfileCard = ({ user,close }) => {
             />
           </div>
           <div className={styles.name}>
-            <span>{`${user.name ? user.name : user.id}`}</span>
+            <span>{`${user.name ? user.name : user.login}`}</span>
           </div>
           <hr />
           <div className={styles.title}>
-            <span>Login : {user.login}</span>
+            <span>ID : {user.id}</span>
             <br />
             <span>email : {`${user.email ? user.email : "no email"}`}</span>
           </div>
@@ -31,12 +31,14 @@ const UserProfileCard = ({ user,close }) => {
 
           <div className={styles.button}>
             <SubmitButton onClick={back} text={"back"} />
-            
           </div>
           <div className={styles.button1}>
-      
-         <a href={user.html_url}>Got to githup</a>
-        
+            <div className={styles.github}>
+              {" "}
+              <a href={user.html_url}>
+                <span>Got to githup</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>

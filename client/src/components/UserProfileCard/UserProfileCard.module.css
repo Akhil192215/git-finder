@@ -56,3 +56,17 @@ body {
 .button{
   margin-left: 195px;
 }
+
+.github{
+  width: 90px;
+  margin-top: 30px;
+  margin-left: 200px;
+  background-color: #9733ee;
+  font-size: 12px;
+ padding: 10px;
+
+}
+.github a{
+  color: #fff;
+ text-decoration: none;
+}

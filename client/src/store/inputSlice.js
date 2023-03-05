@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 export const inputSlice = createSlice({
   name: "input",
   initialState: {
-    type: "text",
+    type: "login",
   },
   reducers: {
     setInputType: (state, action) => {

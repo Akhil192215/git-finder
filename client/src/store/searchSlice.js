@@ -4,6 +4,7 @@ export const searchSlice = createSlice({
   name: "searchByLogin",
   initialState: {
     user: [],
+    search: ''
   },
   reducers: {
     setSearchLogin: (state, action) => {
@@ -12,7 +13,10 @@ export const searchSlice = createSlice({
     cleanData: (state, action) => {
       state.user = action.payload;
     },
+    setSearch:(state,action)=>{
+      state.search = action.payload
+    }
   },
 });
-export const { setSearchLogin, cleanData } = searchSlice.actions;
+export const { setSearchLogin, cleanData,setSearch } = searchSlice.actions;
 export default searchSlice.reducer;
